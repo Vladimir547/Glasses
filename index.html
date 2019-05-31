@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/main.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width">
+    <title>glasses</title>
+</head>
+
+<body>
+    <header class='header'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-6 col-sm-6 col-xs-6'>
+                    <div class='select__countries'>
+                        <div class='language__wrap'>
+                            <label for="language">Language:</label>
+                            <select name='language' id='language'>
+                                <option name='english'>English</option>
+                                <option name='russian'>Russian</option>
+                            </select>
+                        </div>
+                        <div class='country__wrap'>
+                            <label for="country">Currency:</label>
+                            <select name='country' id='country'>
+                                <option name='USA'>USA</option>
+                                <option name='Russia'>Russia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-6 col-sm-6 col-xs-6'>
+                    <div class='login' >
+                        <ul class='nav__login' >
+                            <li onclick="OpenLog()";><a href='#'>log in</a></li>
+                            <li onclick="OpenReg()";><a href='#'>sign up</a></li>
+                        </ul>
+                    </div>
+                    <div class='hide__reg'>
+                        <form action='' method=''>
+                            <input type='email' id='mail' name='mail' value=''>
+                            <input type='text' id='login__reg' name='loginReg' value=''>
+                            <input type='password' id='pass' name='pass' value=''>
+                            <input type='submit' id='reg__sub' name='sub' value='login'>
+                        </form>
+                    </div>
+                    <div class='hide__log'>
+                        <form action='' method=''>
+                            <input type='text' id='login__log' name='loginLog' value=''>
+                            <input type='password' id='log__pass' name='passLog' value=''>
+                            <input type='submit' id='login__sub' name='sub' value='login'>
+                        </form>
+                    </div>
+                </div>
+                <div class='col-lg-2 col-md-2 col-sm-6 col-xs-6'>
+                    <div class='logo'>
+                        <a href='index.html'><img src='./img/logo.png'></a>
+                    </div>
+                </div>
+                <div class='col-lg-5 col-md-5 col-sm-6 col-xs-6'>
+                    <div class='menu'>
+                        <div class='show__menu' id='show'><i class="fas fa-bars"></i></div>
+                        <div class='hide__menu' id='hide'><span>&times;</span></div>
+                        <ul class='menu__header'>
+                            <li><a href='#'>home</a></li>
+                            <li><a href='#'>women</a></li>
+                            <li><a href='#'>men</a></li>
+                            <li><a href='#'>other</a></li>
+                            <li><a href='#'>purchase</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+                    <div class='header__filter'>
+                        <div class='form__src'>
+                            <form action='' method="GET">
+                                <input type="text" name='search' class='search' value='' placeholder="Search..">
+                                <input type='submit' name='sub' class='search__btn' value='search'>
+                            </form>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <div class='circle'><i class="fas fa-shopping-cart"></i></div>
+                        <div class='circle'><i class="fas fa-shopping-cart"></i></div>
+                        <div class='cart'>
+                            <p><span>cart(0)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class='banner'>
+        <div class='container'>
+            <div class='row'>
+                <div class='slogan'>
+                    <div class="slogan__first">
+                        <h1>aluminum club1</h1>
+                    </div>
+                    <div class='slogan__second'>
+                        <h2>experience ray-ban</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='products'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <div class='item__slogan'>
+                        <h3>featured products</h3>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses1.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Lorem iplum is simply.</h5>
+                                <p><span>$388.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses2.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Nullam vestibulum</h5>
+                                <p><span>$90.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses3.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Donec et lorem suscipit.</h5>
+                                <p id='sale'>$460<span>$300.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses4.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Curabitur pretium dui.</h5>
+                                <p><span>$180.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses5.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Lorem iplum is simply.</h5>
+                                <p><span>$278.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses6.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Sed tempus tellus.</h5>
+                                <p><span>$388.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses7.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Lorem iplum is simply.</h5>
+                                <p><span>$500.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses8.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Etiam egestas velit.</h5>
+                                <p id='sale'>$460<span>$200.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='products__staff'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <div class='item__slogan'>
+                        <h3>staff pick</h3>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses2.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Nullam vestibulum</h5>
+                                <p><span>$90.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses4.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Curabitur pretium dui.</h5>
+                                <p><span>$180.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses6.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Sed tempus tellus.</h5>
+                                <p><span>$388.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='products__new'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <div class='item__slogan'>
+                        <h3>new products</h3>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses7.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Lorem iplum is simply.</h5>
+                                <p><span>$500.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses5.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Lorem iplum is simply.</h5>
+                                <p><span>$278.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=' col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='item'>
+                        <div class='glasses'>
+                            <img src='./img/glasses1.png'>
+                        </div>
+                        <div class='item__info'>
+                            <div class='item__text'>
+                                <h5>Lorem iplum is simply.</h5>
+                                <p><span>$388.00</span></p>
+                            </div>
+                            <div class='item__cart circle'>
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='contact'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-lg-6 col-md-6 col-sm-12'>
+                    <div class='advantages'>
+                        <div class='car circle'><i class="fas fa-truck"></i></div>
+                        <h4>free shipping on orders over $100</h4>
+                    </div>
+                </div>
+                <div class='col-lg-6 col-md-6 col-sm-12'>
+                    <div class='advantages'>
+                        <div class='car circle'><i class="fas fa-phone"></i></div>
+                        <h4>call us! free-409-8888-0099</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='seti'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='facebook'>
+                        <h4>facebook</h4>
+                        <p>20000 Mambers</p>
+                        <div class='like'><img src='./img/like.png'></div>
+                        <div class=facebook__photo>
+                            <img src='./img/user1.png'>
+                            <img src='./img/user2.png'>
+                            <img src='./img/user3.png'>
+                            <img src='./img/user4.png'>
+                            <img src='./img/user4.png'>
+                            <img src='./img/user3.png'>
+                            <img src='./img/user2.png'>
+                            <img src='./img/user1.png'>
+                        </div>
+                        <p>Facebook social plugin</p>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='twitter'>
+                        <h4>from twitter</h4>
+                        <div class='twitter__wrap'>
+                            <div class='circle twitter__logo'>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class='twiter__text'>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesettin industry .Lorem ipsum
+                                    has been the</p>
+                            </div>
+                        </div>
+                        <div class='twitter__wrap'>
+                            <div class='circle twitter__logo'>
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class='twiter__text'>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesettin industry .Lorem ipsum
+                                    has been the</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='info'>
+                        <h4>information</h4>
+                        <ul class='info__about'>
+                            <li>Sed ultrices purus non.</li>
+                            <li>sodales sodales</li>
+                            <li>Curabitur pretium dui vitae</li>
+                            <li>Sed ultrices purus non</li>
+                            <li>Lorem Ipsum is simply</li>
+                            <li>sodales sodales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+                    <div class='location'>
+                        <h4>contact us</h4>
+                        <div class='adress'>
+                            <p>Leo Store</p>
+                            <p>Leopards media</p>
+                            <p>KVH Rpad, 459GH</p>
+                            <p>+1 489-8888-0099</p>
+                            <p>mall@email</p>
+                        </div>
+                        <div class='seti__items'>
+                            <div class='circle circle_seti'>
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                            <div class='circle circle_seti'>
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class='circle circle_seti'>
+                                <i class="fab fa-vk"></i>
+                            </div>
+                            <div class='circle circle_seti'>
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class='footer'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12'>
+                    <div class='copyright'>
+                        <p>© copyright 2013 by vladimir ilyushin</p>
+                    </div>
+                </div>
+                <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12'>
+                    <div class='footer__nav'>
+                        <ul class='bottom__nav'>
+                            <li><a href='#'>about us</a></li>
+                            <li><a href='#'>delivery & returns</a></li>
+                            <li><a href='#'>terms & conditions</a></li>
+                            <li><a href='#'>contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src='js/main.js'></script>
+
+
+</body>
+
+</html>
