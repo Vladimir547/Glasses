@@ -1,2 +1,2 @@
 # Glasses
-Training project
+Training project by Ilyushin
